@@ -56,16 +56,46 @@ namespace Piano
                     randomNotes = new Randomization(PlayTypeSign.Melody, notes);
                     return randomNotes.GetList();
                 case 1:
-                    randomNotes = new Randomization(PlayTypeSign.ShuffleDown, notes);
+                    randomNotes = new Randomization(PlayTypeSign.GetByBase, notes);
                     return randomNotes.GetList();
                 case 2:
-                    randomNotes = new Randomization(PlayTypeSign.ShuffleDown, notes);
+                    randomNotes = new Randomization(PlayTypeSign.Melody2, notes);
                     return randomNotes.GetList();
                 case 3:
-                    randomNotes = new Randomization(PlayTypeSign.ShuffleDown, notes);
+                    randomNotes = new Randomization(PlayTypeSign.OrderAsc, notes);
                     return randomNotes.GetList();
                 case 4:
-                    randomNotes = new Randomization(PlayTypeSign.ShuffleDown, notes);
+                    randomNotes = new Randomization(PlayTypeSign.OrderAscBy2Step, notes);
+                    return randomNotes.GetList();
+                case 5:
+                    randomNotes = new Randomization(PlayTypeSign.OrderAscBy3Step, notes);
+                    return randomNotes.GetList();
+                case 6:
+                    randomNotes = new Randomization(PlayTypeSign.OrderDes, notes);
+                    return randomNotes.GetList();
+                case 7:
+                    randomNotes = new Randomization(PlayTypeSign.OrderDesBy2Step, notes);
+                    return randomNotes.GetList();
+                case 8:
+                    randomNotes = new Randomization(PlayTypeSign.OrderDesBy3Step, notes);
+                    return randomNotes.GetList();
+                case 9:
+                    randomNotes = new Randomization(PlayTypeSign.OrderingStep3, notes);
+                    return randomNotes.GetList();
+                case 10:
+                    randomNotes = new Randomization(PlayTypeSign.OrderingStep3Backward, notes);
+                    return randomNotes.GetList();
+                case 11:
+                    randomNotes = new Randomization(PlayTypeSign.OrderNotes, notes);
+                    return randomNotes.GetList();
+                case 12:
+                    randomNotes = new Randomization(PlayTypeSign.Shuffle1, notes);
+                    return randomNotes.GetList();
+                case 13:
+                    randomNotes = new Randomization(PlayTypeSign.Shuffle2, notes);
+                    return randomNotes.GetList();
+                case 14:
+                    randomNotes = new Randomization(PlayTypeSign.Shuffle3, notes);
                     return randomNotes.GetList();
                 default:
                     break;
